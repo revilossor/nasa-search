@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+div {
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.app {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.searchSection {
+  margin-top: 15vh;
+}
+
+.searchSection h1 {
+  margin-bottom: 10px;
+}
+
+.searchBox input[type="image"] {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  right: 30px;
+  top: 6px;
+}
+
+.searchBox input[type="text"] {
+  border: 2px black solid;
+  height: 36px;
+  width: 40%;
+  font-size: large;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+.checkbox {
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkbox label {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -4px;
+  left: 0;
+  border:2px solid black;
+}
+
+.checkbox label:after {
+  opacity: 0;
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 10px;
+  background: transparent;
+  top: 4px;
+  left: 3px;
+  border: 3px solid #333;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-50deg);
+}
+
+.checkbox input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+.searchFilter strong {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.searchFilter {
+  padding: 20px;
+}
+
+.searchFilters {
+  margin-top: 20px;
+}
+
+.previewSection {
+  padding-top: 70px;
+  max-width: 700px;
+}
+
+.preview {
+  display: inline-block;
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.preview img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.assetPage h1 {
+  margin-top: 15vh;
+  margin-bottom: 30px;
+}
+
+.assetPage p {
+  font-size: x-large;
+}
+
+.assetPage .content {
+  width: 80%;
+}
+
+.detail-asset img {
+  padding-top: 10vh;
+  width: 100%;
+}

@@ -1,0 +1,45 @@
+{
+  "name": "nasa-search",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-eslint": "^8.2.4",
+    "cross-fetch": "^2.2.1",
+    "gh-pages": "^1.2.0",
+    "husky": "^0.14.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "snazzy": "^7.1.1",
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
+    "precommit": "npm run lint",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom --verbose",
+    "eject": "react-scripts eject",
+    "lint": "standard | snazzy"
+  },
+  "standard": {
+    "globals": [
+      "it",
+      "describe",
+      "expect",
+      "beforeAll"
+    ],
+    "parser": "babel-eslint",
+    "ignore": [
+      "build"
+    ]
+  },
+  "homepage": "http://revilossor.github.io/nasa-search"
+}
