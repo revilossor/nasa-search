@@ -5,16 +5,13 @@ const DetailAsset = ({ sources, type }) => {
     switch (type) {
       case 'audio':
         return (
-          <h2>poop</h2>
+          <audio src={sources[1]} />
         )
-      case 'image':
+      default:
         return (
-          <img src={sources[1]} />
+          <img src={sources[1]} alt="image"/>
         )
     }
-    return (
-      <h1> poop </h1>
-    )
   }
 
   return (
