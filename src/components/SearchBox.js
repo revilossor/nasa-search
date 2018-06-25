@@ -4,7 +4,7 @@ const SearchBox = ({ term, onClick }) => (
   <div className='searchBox'>
     <form>
       <input type='text' />
-      <input type='image' src='search-icon.svg' alt='search icon' onClick={onClick} />
+      <input type='image' src='/nasa-search/search-icon.svg' alt='search icon' onClick={onClick} />
     </form>
   </div>
 )
