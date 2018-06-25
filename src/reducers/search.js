@@ -53,7 +53,7 @@ export default function search (state = initialState, action) {
           mediaType: item.data[0].media_type,
           thumb: item.data[0].media_type === 'image'
             ? item.links[0].href
-            : '/speaker-icon.svg'
+            : '/nasa-search/speaker-icon.svg'
         }))
       }
     default:
