@@ -8,9 +8,9 @@ const App = () => (
   <div className='app'>
     <BrowserRouter>
       <Switch>
-        <Route exact path='/' component={SearchPage} />
-        <Route exact path='/search' component={SearchPage} />
-        <Route exact path='/asset/:id' component={DetailPage} />
+        <Route exact path='/nasa-search/' component={SearchPage} />
+        <Route exact path='/nasa-search/search' component={SearchPage} />
+        <Route exact path='/nasa-search/asset/:id' component={DetailPage} />
       </Switch>
     </BrowserRouter>
   </div>
