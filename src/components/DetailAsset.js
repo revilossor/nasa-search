@@ -9,7 +9,7 @@ const DetailAsset = ({ sources, type }) => {
         )
       default:
         return (
-          <img src={sources[1]} alt="image"/>
+          <img src={sources[1]} alt="media"/>
         )
     }
   }
